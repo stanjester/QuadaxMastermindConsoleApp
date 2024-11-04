@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Quadax.Mastermind
 {
@@ -97,9 +97,14 @@ namespace Quadax.Mastermind
                     attempts--;
                     if (attempts > 0)
                     {
-                        Console.WriteLine($"{attempts} attempts remaining.\n");
+                        Console.WriteLine($"\n");
                     }
                 }
+            }
+
+            if (!isGuessedCorrectly)
+            {
+                Console.WriteLine($"You lose.  The secret code was {string.Join("", secretAnswer)}");
             }
         }
     }
