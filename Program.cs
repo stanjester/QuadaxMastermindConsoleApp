@@ -14,11 +14,11 @@ namespace Quadax.Mastermind
             for (int i = 0; i < 4; i++)
                 secretAnswer.Add(random.Next(1, 7));
 
-            // Test using a fixed answer - 1234
-            secretAnswer[0] = 1;
-            secretAnswer[1] = 2;
-            secretAnswer[2] = 3;
-            secretAnswer[3] = 4;
+            //// Test using a fixed answer - 1234
+            // secretAnswer[0] = 1;
+            // secretAnswer[1] = 2;
+            // secretAnswer[2] = 3;
+            // secretAnswer[3] = 4;
 
             Console.WriteLine("Mastermind");
             Console.WriteLine("Guess the 4 digit secret code, with each digit ranging from 1 to 6");
